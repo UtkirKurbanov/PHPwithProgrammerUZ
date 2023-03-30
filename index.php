@@ -87,15 +87,42 @@ echo 'Hola, $name' ."<br />";
 <?php
 // String funksiyalari: strlen, strcmp, strpos
 
-echo strlen("programmer.uz")."<br />"; //13
+// echo strlen("programmer.uz")."<br />"; //13
 
-echo strcmp("welcome", "welcome")."<br />"; //satrlar o'zaro teng va ekranga 0 natija chiqadi
-echo strcmp("Welcome", "welcome")."<br />";//-1
+// echo strcmp("welcome", "welcome")."<br />"; //satrlar o'zaro teng va ekranga 0 natija chiqadi
+// echo strcmp("Welcome", "welcome")."<br />";//-1
 
-echo strcmp("welcome to Programmer.uz", "okay")."<br />"; 
+// echo strcmp("welcome to Programmer.uz", "okay")."<br />"; 
 
-echo strpos("programmer.uz", "u");//strpos funksiyasi index qaytaradi,  "u" 11 qatorda
+// echo strpos("programmer.uz", "u");//strpos funksiyasi index qaytaradi,  "u" 11 qatorda
 
 ?>
 
+<?php
+// strtolower, strtoupper
+echo strtolower("PHP DEVELOPERS")."<br />";
+echo strtoupper("php dev tools")."<br />";
+echo strtoupper("<p style='text-transform:lowercase'>ProgramMER.UZ</p>"); //tushincha: bu misolda strtoupper funksiyasi orqali katta harflarda qiymatni chiqarishni so'radik lekin style orqali lowercase browserda ekranga chiqmoqda, sababi strtoupper orqali php serverda qiymatni katta harflarda o'zgartirdi css browser bilan ishlaganligi bois ekranda lowercase'li qiymat chiqmoqda 
+
+?>
+
+<?php
+// trim, explode, implode
+echo trim("         PHP developers  ")."<br />"; //trim orqali old va orqadan probellar tozalanmoqda
+echo trim("JavaScript", "Script")."<br />";
+
+$a = "B3124569W"; 
+echo trim("B3124569", "BW")."<br />";
+
+print_r (explode(" ", "Welcome to our team"));//array elementlarini print_r orqali ekranga chiqaramiz
+
+$key = "Lorem ipsum, dolor, sit, furla, min, quie de la";
+print_r (explode(",", $key));
+
+
+$company = array("Apple", "Tesla", "Microsoft", "HP", "LG");
+print_r ($company);
+echo implode(" ", $company);
+
+?>
 
