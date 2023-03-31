@@ -180,17 +180,44 @@ print_r($letter);
 // array_unshift($letter, 'z');
 // print_r($letter);
 
-$letter = array('q'=>"Quebec City", 'w'=>"Washington", 'e'=>"Edinburgh", 'r'=>"Rome", 't'=>"Tijuana");
-print_r($letter);
-echo $letter['t']."<br/>";
+// $letter = array('q'=>"Quebec City", 'w'=>"Washington", 'e'=>"Edinburgh", 'r'=>"Rome", 't'=>"Tijuana");
+// print_r($letter);
+// echo $letter['t']."<br/>";
 
-$user = [
-    "name" => "John",
-    "surname" => "Doe",
-    "age" => 23
-];
+// $user = [
+//     "name" => "John",
+//     "surname" => "Doe",
+//     "age" => 23
+// ];
 
-echo $user["name"];
+// echo $user["name"];
 
+
+//Izohlash va tartiblash
+//in_array, array_search, array_reverse, sort, rsort, shuffle
+
+$colors =array('b'=>"black", 'r'=>"red", 'y'=>"yellow", 'g'=>"green", 'w'=>"white");
+
+// if (in_array('pink', $colors)){
+//     echo "Found";
+// } else {
+//     echo "Not found";
+// }
+
+// echo array_search("yellow", $colors);
+
+array_reverse($colors);
+print_r($colors);
+
+print_r(array_reverse($colors));
+
+sort($colors); //Alfabet harflari bo'yicha ekranga chiqarib beradi
+print_r($colors);
+
+rsort($colors);
+print_r($colors);
+
+shuffle($colors);//rendom ko'rinishida tartiblab ekranga chiqaradi
+print_r($colors);
 
 ?>
