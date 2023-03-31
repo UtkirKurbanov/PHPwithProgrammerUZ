@@ -143,3 +143,25 @@ echo round(9.81115, 3)."<br />"; //yaxlitlash
 echo log(243, 3)."<br />"; //5
 echo log10(1000000)."<br />";
 ?>
+
+<?php
+//Array
+$car = array(2, "Opel", 4, "BMW", "#");
+print_r($car);
+
+$subject = ['var', 'oop', 'dynamic', 'java', 'math'];
+print_r($subject);
+
+$car[0] = "Kia";
+$car[2] = "Nissan";
+$car[4] = "Porsche";
+$car[] = "Tayota";
+print_r($car);
+
+// echo $car[1];
+// echo $subject[2];
+
+echo count($car);
+
+
+?>
