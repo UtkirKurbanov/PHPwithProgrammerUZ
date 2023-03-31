@@ -143,3 +143,14 @@ echo round(9.81115, 3)."<br />"; //yaxlitlash
 echo log(243, 3)."<br />"; //5
 echo log10(1000000)."<br />";
 ?>
+
+<?php
+//Matematik o'zgarmaslar
+echo M_PI ."<br />";
+echo round(M_PI, 2)."<br />";
+
+echo M_E ."<br />";
+echo round(M_E, 2)."<br />";
+
+echo M_LN2;
+?>
