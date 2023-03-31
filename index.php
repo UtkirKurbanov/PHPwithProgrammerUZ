@@ -162,6 +162,35 @@ print_r($car);
 // echo $subject[2];
 
 echo count($car);
+?>
+<?php
+//pop, push, shift, unshift
+
+$letter = array('q', 'w', 'e', 'r', 't');
+print_r($letter);
+// array_pop($letter);
+// print_r($letter);//t deleted
+
+// array_push($letter, 'y');
+// print_r($letter);
+
+// array_shift($letter);
+// print_r($letter);
+
+// array_unshift($letter, 'z');
+// print_r($letter);
+
+$letter = array('q'=>"Quebec City", 'w'=>"Washington", 'e'=>"Edinburgh", 'r'=>"Rome", 't'=>"Tijuana");
+print_r($letter);
+echo $letter['t']."<br/>";
+
+$user = [
+    "name" => "John",
+    "surname" => "Doe",
+    "age" => 23
+];
+
+echo $user["name"];
 
 
 ?>
