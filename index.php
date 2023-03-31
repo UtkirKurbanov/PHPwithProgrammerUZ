@@ -126,3 +126,20 @@ echo implode(" ", $company);
 
 ?>
 
+<?php
+//mathimatical functions: abs, ceil, floor, pow, min, max, rand, sin, cos, tan, log, log10
+echo abs(-5)."<br />"; //absolyut qiymat 
+echo ceil(1.3)."<br />";//kelayotgan qiymatga eng yaqin katta bututn sonni ekranga chiqaradi
+echo ceil(-7.9)."<br />"; //eng yaqin katta butun son
+echo floor(5.8)."<br />"; //eng yaqin kichik butun son
+echo pow(5, 3)."<br />"; //5 ning 3 darajasi yoki kubi = 125 
+echo sqrt(81)."<br />"; //kvadrat ildiz
+echo min(14, 21, 11, -3, -10)."<br />";// kelayotgan sonlardan eng kichigini ekranga chiqaradi
+echo max(14, 21, 11, -3, -10)."<br />"; //eng katta son
+echo rand(0, 10)."<br />"; //istalgan son 0 dan 10 gacha
+echo round(3.14)."<br />"; //yaxlitlash
+echo round(9.8)."<br />"; //yaxlitlash
+echo round(9.81115, 3)."<br />"; //yaxlitlash
+echo log(243, 3)."<br />"; //5
+echo log10(1000000)."<br />";
+?>
