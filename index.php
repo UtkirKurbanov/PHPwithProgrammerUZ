@@ -254,4 +254,17 @@ print_r($num);
 $letters = range('a', 'o');
 print_r($letters);
 
+//array_sum, array_product, array_unique
+$number1 = [1, 2, 3, 4, 5];
+
+// echo array_sum($number1); // array tarkibidagi elementlar yig'indisini ekranga chiqaradi
+
+echo array_product($number1); // array tarkibidagi elementlar ko'paytmasini ekranga chiqaradi
+
+$colorOne = ['red', 'green', 'blue', 'red', 'yellow', 'green'];
+print_r($colorOne);
+
+print_r(array_unique($colorOne));// bir hil elementlarni olib tashlab qolganlarini ekranga chiqaradi
+
+
 ?>
