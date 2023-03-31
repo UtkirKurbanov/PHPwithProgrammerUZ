@@ -220,4 +220,38 @@ print_r($colors);
 shuffle($colors);//rendom ko'rinishida tartiblab ekranga chiqaradi
 print_r($colors);
 
+// array_fill, array_merge, array_intersect, array_diff, array_slice, range
+
+$number = array_fill(0, 5, "p");// sharh: 0'linchi indexdan boshlab 5 ta element hosil qilinsin va u/= barcha qiymnati p'ga teng bo'lsin
+print_r($number);
+
+$color1 = ["red", "green", "blue"];
+$color2 = ["white", "black", "yellow"];
+
+$colors = array_merge($color1, $color2);// massivlar birlashtirildi
+print_r($colors);
+
+$cars1 = ["Kia", "Reno", "Nissan"];
+$cars2 = ["BMW", "Tayota", "Chevrolet", "Reno", "Nissan"];
+$newCars = array_intersect($cars1, $cars2);// ikkita massiv kesishmasidagi ikkalasida ham bor bo'lgan bir hil moshinalar ekranga uzatilmoqda 
+print_r($newCars);
+
+$newCars = array_diff($cars1, $cars2); //Kia 2 massivda mavjud emas
+print_r($newCars);
+
+$newCars = array_diff($cars2, $cars1); //BMW, Tayota, Chevrolet 1 massivda mavjud emas
+print_r($newCars);
+
+$name = ["Nick", "John", "Emma", "Trinity"];
+print_r(array_slice($name, 2));//0 va 1 index'lardagi Nick va John qiymatlari olib tashlanmoqda 2 va 3 index'lardagi Emma va Trinity qiymatlari ekranga uzatiladi
+
+$number = range(0, 10);// 0'dan 10'gacha bo'lgan sonlar 1 oshib borish bilan ekranga chiqaradi
+print_r($number);
+
+$num = range(10, 35, 5); // 10'dan 35'gacha bo'lgan sonlar 5 oshib borish bilan ekranga chiqariladi
+print_r($num);
+
+$letters = range('a', 'o');
+print_r($letters);
+
 ?>
