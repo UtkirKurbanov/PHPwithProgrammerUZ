@@ -122,7 +122,35 @@ print_r (explode(",", $key));
 
 $company = array("Apple", "Tesla", "Microsoft", "HP", "LG");
 print_r ($company);
-echo implode(" ", $company);
+echo implode(" ", $company)."<br />";
 
 ?>
 
+<?php
+//shart operatorlari
+$userName = "admin";
+$password = "123";
+if ($userName == "admin" && $password == "123321") {
+    echo "Welcome";
+}else{
+    echo "Username or password is incorrect"."<br />";
+}
+
+for ($i=0; $i < 5; $i++) { 
+    echo $i ."<br />";
+}
+echo "i ning oxirgi qiymati:" . $i . "<br />";
+
+$i = 0;
+while ($i <= 10) {
+    echo $i ."<br />";
+    $i++;
+}
+
+$a = 0;
+do {
+    echo $a;
+    $a++;
+} while ($a >= 10); //Agar shart xato bo'lganda ham, blok bir marta bo;lsa ham o'z faoliyatini ko'rsatadi bajariladi
+
+?>
