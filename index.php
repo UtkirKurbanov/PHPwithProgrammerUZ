@@ -268,3 +268,21 @@ print_r(array_unique($colorOne));// bir hil elementlarni olib tashlab qolganlari
 
 
 ?>
+
+<?php
+//foreach operator
+$color = ["red", "yellow", "blue", "green"];
+print_r($color);
+
+for ($i=0; $i < count($color); $i++) { 
+    echo $color[$i] . "<br />";
+}
+
+$cityName = ['t'=>"Tashkent", 's'=>"Samarkand", 'k'=>"Khiva", 'b'=>"Bukhara"];
+print_r($cityName);
+
+foreach ($cityName as $key => $value) {
+    echo $value ."<br />";
+    // echo $key ."<br />";
+} //php'da array elementlarini elon qilish u-n foreach operatoridan foydalanamiz 
+?>
